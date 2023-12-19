@@ -1,0 +1,14 @@
+#header {
+  background-color: pink;
+  nav {
+    background-color: rgb(170, 37, 99);
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: fit-content;
+        color: rgb(190, 157, 157);
+      }
+    }
+  }
+}

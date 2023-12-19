@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-size: 10px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#footer {
+  background-color: pink;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 2em;
+}
+#footer h2 {
+  font-size: 2.4em;
+}
+#footer p {
+  font-size: 1.4em;
+}
+
+#header {
+  background-color: pink;
+}
+#header nav {
+  background-color: rgb(170, 37, 99);
+}
+#header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+#header nav ul li {
+  width: fit-content;
+  color: rgb(190, 157, 157);
+}
