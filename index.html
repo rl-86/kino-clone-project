@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/main.css" />
-    <title>Regna Biograf</title>
+    <script src="main.js" defer></script>
+    <title>Biograf Regna</title>
+    <link rel="icon" type="image/png" href="/assets/logga.png" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+      });
+    </script>
   </head>
-  <body>
-    <h1>Tandem is "fun"....</h1>
-<img src="assets/tandem-bike.png" alt="Ugly image of couple riding tandem bike, except it's not ugly enough">
 
-    <script src="main.js"></script>
+  <body>
+    <header id="header"></header>
+
+    <section>Section</section>
+
+    <main></main>
+
+    <section>Section</section>
+
+    <footer id="footer"></footer>
   </body>
 </html>

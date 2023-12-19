@@ -4,8 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:watch": "sass --no-source-map --watch src/main.scss assets/main.css"
   },
   "author": "JR",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
 }
