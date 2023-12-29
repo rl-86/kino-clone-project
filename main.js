@@ -1,3 +1,5 @@
+import { currentSlide } from './herobanner';
+
 // Function to add same header and footer to all html pages with id="header" or "footer"
 async function includeHTML() {
   // Fetch the header HTML
@@ -12,3 +14,21 @@ async function includeHTML() {
 }
 
 includeHTML();
+
+// Herobanner
+
+dot1 = document
+  .getElementById('dot1')
+  .addEventListener('click', currentSlide(0));
+dot2 = document
+  .getElementById('dot2')
+  .addEventListener('click', currentSlide(1));
+dot3 = document
+  .getElementById('dot3')
+  .addEventListener('click', currentSlide(2));
+dot4 = document
+  .getElementById('dot4')
+  .addEventListener('click', currentSlide(3));
+dot5 = document
+  .getElementById('dot5')
+  .addEventListener('click', currentSlide(4));
