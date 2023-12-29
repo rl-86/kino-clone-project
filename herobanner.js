@@ -29,9 +29,25 @@ function nextSlide() {
   current++;
 }
 
-export function currentSlide(i) {
+function currentSlide(i) {
   reset();
   item[i].style.display = 'block';
   dot[i].style.background = 'transparent';
   current = i;
 }
+
+dot1 = document
+  .getElementById('dot1')
+  .addEventListener('click', currentSlide(0));
+dot2 = document
+  .getElementById('dot2')
+  .addEventListener('click', currentSlide(1));
+dot3 = document
+  .getElementById('dot3')
+  .addEventListener('click', currentSlide(2));
+dot4 = document
+  .getElementById('dot4')
+  .addEventListener('click', currentSlide(3));
+dot5 = document
+  .getElementById('dot5')
+  .addEventListener('click', currentSlide(4));
