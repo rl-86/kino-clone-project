@@ -1,14 +1,32 @@
 #footer {
-    background-color: pink;
-    position:fixed;
-    bottom: 0;
-    width:100%;
-    padding: 1em 2em;
-    
-    h2 {
-        font-size: 2.4em;
-    }
-    p {
-        font-size: 1.4em;
-    }
+  background-color: $darkgrey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4em 5em;
+}
+#footer h3 {
+  font-size: 2.4em;
+  color: $lightgreen;
+  margin: 15px 0 0 20px;
+}
+#footer p {
+  font-size: 1.2em;
+  color: $lightgrey;
+  margin: 2px 0 25px 25px;
+}
+.footer_social_icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+}
+.footer_social_icons img {
+  width: 40px;
+  height: auto;
+  margin-right: 30px;
+}
+.footer_social_icons img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
