@@ -1,6 +1,6 @@
 # Group-Assignment2-Cinema-Project
 
-Best Practices
+# Best Practices
 - språk på commits engelska
 - så tydligt som möjligt i namn och commits
 - två godkända review --> merge. Vem som helst kan merge:a
