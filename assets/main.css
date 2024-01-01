@@ -47,11 +47,11 @@
 #header nav {
   background-color: rgb(170, 37, 99);
 }
-#header nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-#header nav ul li {
+#header li {
   width: fit-content;
   color: rgb(190, 157, 157);
+}
+#header ul {
+  display: flex;
+  justify-content: space-around;
 }
