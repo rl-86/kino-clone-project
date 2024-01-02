@@ -39,6 +39,7 @@
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
+
 #header {
   background-color: pink;
 }
@@ -53,6 +54,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 
 .herobanner_item {
   display: none;
