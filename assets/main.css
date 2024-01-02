@@ -57,7 +57,8 @@
 
 #faqBtn {
   font-size: 2.5em;
-  color: yellow;
+  color: #222222;
+  background-color: #B1BDB2;
   margin-left: 50px;
   border: none;
   border-radius: 5px;
@@ -66,6 +67,7 @@
   position: fixed;
   bottom: 120px;
   left: 90%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
