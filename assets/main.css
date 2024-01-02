@@ -13,7 +13,7 @@
 
 #footer {
   background-color: pink;
-  position: fixed;
+  position: bottom;
   bottom: 0;
   width: 100%;
   padding: 1em 2em;
@@ -23,21 +23,6 @@
 }
 #footer p {
   font-size: 1.4em;
-}
-#footer .footer_social_icons{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display : flex;
-}
-#footer .footer_social_icons img{
-  width: 40px;
-  height: auto;
-  margin-right: 30px;
-}
-#footer .footer_social_icons img:hover{
-  transform: scale(1.2); 
-  transition: transform 0.3s ease;
 }
 
 #header {
