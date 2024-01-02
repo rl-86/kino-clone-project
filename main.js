@@ -1,3 +1,4 @@
+import { showSlides } from './herobanner.js';
 // Function to add same header and footer to all html pages with id="header" or "footer"
 async function includeHTML() {
   // Fetch the header HTML
@@ -12,3 +13,6 @@ async function includeHTML() {
 }
 
 includeHTML();
+
+// Herobanner slideshow
+showSlides();

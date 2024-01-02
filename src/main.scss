@@ -7,11 +7,6 @@ $lightgrey: #f4f3ee;
 $white: #ffffff;
 $black: #222222;
 
-@import 'sections/footer';
-@import 'sections/header';
-@import 'sections/movies';
-@import 'sections/start-page';
-
 *,
 *::before,
 *::after {
@@ -35,3 +30,9 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/start-page';
+@import 'sections/herobanner';
+@import 'sections/movies';
