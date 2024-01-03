@@ -13,12 +13,37 @@ $black: #000000;
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+  top: 250px;
+  text-align: center;
+}
+
 * {
   margin: 0;
   font-size: 10px;
   list-style-type: none;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+
+  h1 {
+    font-size: 3.2rem;
+    color: $lightgreen;
+    margin: 10px;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    color: $lightgreen;
+    margin: 5px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  }
+  p {
+    font-size: 1.4rem;
+    color: $lightgrey;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+  }
 }
 
 body {
@@ -46,3 +71,5 @@ body {
 @import 'sections/start-page';
 @import 'sections/herobanner';
 @import 'sections/movies';
+@import 'sections/about-us';
+@import 'sections/tickets';
