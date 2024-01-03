@@ -1,11 +1,11 @@
 # Group-Assignment2-Cinema-Project
 
 # Best Practices
-- språk på commits engelska
-- så tydligt som möjligt i namn och commits
-- två godkända review --> merge. Vem som helst kan merge:a
-- prettier med enkel quotation
-- BEM-ish namngivning av klasser
-- jobba i sin egen branch när man skapar grejer, inte radera branchen efter merge
-- assigna sig själv när man skapar en issue
-- använda kebab-case för namn på branches
+- Language used in commits: English.
+- Be as clear as possible in commits and names.
+- Two approvals on every pull request before merge. Whoever can perform a merge.
+- Prettier extension in Vscode with single quotation.
+- BEM-ish for class namens in SASS/CSS.
+- Work in separate branches; dont remove the branch after merge.
+- Assign yourself when working on an issue.
+- Use kebab-case when for branch names.
