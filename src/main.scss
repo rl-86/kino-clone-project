@@ -1,3 +1,12 @@
+// Color variables
+$darkgrey: #222222;
+$darkblue: #26344a;
+$greygreen: #6c797e;
+$lightgreen: #b1bdb2;
+$lightgrey: #f4f3ee;
+$white: #ffffff;
+$black: #222222;
+
 *,
 *::before,
 *::after {
@@ -9,9 +18,21 @@
   font-size: 10px;
   list-style-type: none;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 1) 10%,
+    rgba(38, 52, 74, 1) 60%,
+    rgba(108, 121, 126, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @import 'sections/footer';
 @import 'sections/header';
 @import 'sections/start-page';
 @import 'sections/herobanner';
+@import 'sections/movies';
