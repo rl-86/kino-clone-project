@@ -17,6 +17,7 @@ main {
   position: relative;
   top: 250px;
   text-align: center;
+  min-height: 45%; // This is a temporary fix for height and footer issues!
 }
 
 * {
