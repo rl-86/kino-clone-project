@@ -8,6 +8,7 @@ main {
   position: relative;
   top: 250px;
   text-align: center;
+  min-height: 45%;
 }
 
 * {
@@ -52,10 +53,11 @@ body .background__raining {
 #footer {
   background-color: #222222;
   box-shadow: 0px -1px 8px #b1bdb2;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 3em 5em;
+  margin-top: 400px;
 }
 
 .footer__info {
@@ -81,10 +83,11 @@ body .background__raining {
 }
 
 .footer_social_icons {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   display: flex;
+  float: right;
 }
 
 .footer_social_icons img {
@@ -146,7 +149,7 @@ body .background__raining {
   border-radius: 5px;
   padding: 8px 16px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   bottom: 90px;
   right: 35px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);

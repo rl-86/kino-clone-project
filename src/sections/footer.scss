@@ -2,10 +2,11 @@
   background-color: $darkgrey;
   box-shadow: 0px -1px 8px $lightgreen;
 
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 3em 5em;
+  margin-top: 400px;
 }
 
 .footer__info {
@@ -30,10 +31,13 @@
 }
 
 .footer_social_icons {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   display: flex;
+  float: right;
+  // transform: translateY(-20px);
+  
 }
 .footer_social_icons img {
   width: 40px;
