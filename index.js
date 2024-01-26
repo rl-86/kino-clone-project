@@ -1,15 +1,3 @@
-import express from "express";
-import fs from "fs/promises";
-
-const app = express();
-
-app.get("/", async (request, response) => {
-  const buf = await fs.readFile("./templates/layouts/main.handlebars");
-  const html = buf.toString();
-
-  response.send(html);
-});
-
-app.use("/", express.static("./"));
+import app from "./src/app.js";
 
 app.listen(5080);
