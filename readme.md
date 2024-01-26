@@ -1,2 +1,1 @@
-This is the kino-clone-backend repo
-hello, test
+This is the kino-clone-backend conversion project :D
