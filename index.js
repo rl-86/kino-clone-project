@@ -4,7 +4,7 @@ import fs from "fs/promises";
 const app = express();
 
 app.get("/", async (request, response) => {
-  const buf = await fs.readFile("./index.html");
+  const buf = await fs.readFile("./templates/layouts/index.handlebars");
   const html = buf.toString();
 
   response.send(html);
