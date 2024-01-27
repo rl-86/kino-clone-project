@@ -1,25 +1,10 @@
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="assets/main.css" />
-    <script type="module" src="main.js" defer></script>
-    <title>Biograf Regna</title>
-    <link rel="icon" type="image/png" href="/assets/logga.png" />
-  </head>
-
-  <body>
-    <header id="header">
-      {{>header}}
-    </header>
-    <img
-      class="background__raining"
-      src="assets\raining-background.jpg"
-      alt="raining in the background"
-    />
-    <main class="content">
-      {{{body}}}
-    </main>
-    <footer id="footer">
-      {{>footer}}
-    </footer>
-  </body>
-</html>
+<h1>Filmer</h1>
+<ul>
+  {{#each movies}}
+    <li>
+      <a href="/movies/{{this.id}}">
+        {{this.title}}
+      </a>
+    </li>
+  {{/each}}
+</ul>

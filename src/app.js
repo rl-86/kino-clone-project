@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import exphbs from "express-handlebars";
 import handlebarsLayouts from "handlebars-layouts";
 import { loadMovie, loadMovies } from "./movies.js";
@@ -15,14 +15,35 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 app.set("views", "./templates");
 
-app.get("/", async (req, res) => {
+// Movie list
+app.get("/filmer", async (req, res) => {
   const movies = await loadMovies();
-  res.render("home", { movies });
+  res.render("filmer", { movies });
 });
 
 app.get("/movies/:movieId", async (req, res) => {
   const movie = await loadMovie(req.params.movieId);
   res.render("movie", { movie });
+});
+
+app.get("/", async (req, res) => {
+  res.render("home");
+});
+
+app.get("/filmer", async (req, res) => {
+  res.render("filmer");
+});
+
+app.get("/about", async (req, res) => {
+  res.render("about");
+});
+
+app.get("/tickets", async (req, res) => {
+  res.render("tickets");
+});
+
+app.get("/event", async (req, res) => {
+  res.render("event");
 });
 
 app.use("/", express.static("./"));
