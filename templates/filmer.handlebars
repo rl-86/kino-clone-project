@@ -1,20 +1,25 @@
 <html lang="en">
   <head>
-    <title>Aktuella filmer</title>
     <link rel="stylesheet" href="assets/main.css" />
-    <link rel="icon" type="image/png" href="/assets/logga.png" />
     <script type="module" src="main.js" defer></script>
+    <title>Biograf Regna</title>
+    <link rel="icon" type="image/png" href="/assets/logga.png" />
   </head>
 
   <body>
-    <header id="header"></header>
+    <header id="header">
+      {{>header}}
+    </header>
     <img
       class="background__raining"
       src="assets\raining-background.jpg"
       alt="raining in the background"
     />
-    <main class="content">{{{body}}}</main>
-
-    <footer id="footer"></footer>
+    <main class="content">
+      {{{body}}}
+    </main>
+    <footer id="footer">
+      {{>footer}}
+    </footer>
   </body>
 </html>

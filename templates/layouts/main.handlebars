@@ -1,7 +1,5 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/main.css" />
     <script type="module" src="main.js" defer></script>
     <title>Biograf Regna</title>
@@ -9,7 +7,9 @@
   </head>
 
   <body>
-    <header id="header"></header>
+    <header id="header">
+      {{>header}}
+    </header>
     <img
       class="background__raining"
       src="assets\raining-background.jpg"
@@ -48,6 +48,8 @@
 
     <section>Section</section>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+      {{>footer}}
+    </footer>
   </body>
 </html>
