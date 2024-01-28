@@ -6,9 +6,8 @@
 
 main {
   position: relative;
-  top: 250px;
+  top: 200px;
   text-align: center;
-  min-height: 45%;
 }
 
 * {
@@ -18,36 +17,35 @@ main {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
-* * .movie img {
-  max-height: 70%;
-}
-* h1 {
-  font-size: 3.2rem;
+
+h1 {
+  font-size: 3.4rem;
   color: #f4f3ee;
   margin: 10px;
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 }
-* h2 {
+
+h2 {
   font-size: 2.2rem;
   color: #b1bdb2;
   margin: 5px;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
-* p {
+
+p {
   font-size: 1.4rem;
   color: #f4f3ee;
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
 body {
-  background: linear-gradient(
-    0deg,
-    rgb(34, 34, 34) 10%,
-    rgb(38, 52, 74) 60%,
-    rgb(108, 121, 126) 100%
-  );
+  background: linear-gradient(0deg, rgb(34, 34, 34) 10%, rgb(38, 52, 74) 60%, rgb(108, 121, 126) 100%);
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body .background__raining {
   position: fixed;
@@ -56,6 +54,15 @@ body .background__raining {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.content {
+  flex: 1;
+}
+.content p {
+  max-width: 70vw;
+  text-align: left;
+  margin: 0 auto;
 }
 
 #footer {
@@ -111,11 +118,7 @@ body .background__raining {
 }
 
 #header {
-  background: linear-gradient(
-    0deg,
-    rgba(38, 52, 74, 0.1) 50%,
-    rgba(34, 34, 34, 0.1) 100%
-  );
+  background: linear-gradient(0deg, rgba(38, 52, 74, 0.1) 50%, rgba(34, 34, 34, 0.1) 100%);
   background-repeat: no-repeat;
   height: 0px;
   background-color: black;
@@ -140,10 +143,11 @@ body .background__raining {
   font-size: 2.4em;
   font-weight: 700;
   color: white;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
 }
 #header div nav ul li :hover {
-  color: #6c797e;
-  transition: color 0.3s ease;
+  color: #b1bdb2;
+  transition: color 0.05s ease;
   cursor: pointer;
 }
 
@@ -217,16 +221,42 @@ body .background__raining {
     opacity: 1;
   }
 }
-.about-us-body {
-  height: 100%;
+.content ul {
+  padding: 0;
 }
-.about-us-body .background__raining {
-  opacity: 0.7;
+.content li {
+  position: relative;
+  margin: 15px;
+  text-align: center;
 }
-.about-us-body p {
-  margin: 0.5em 35% 2em 35%;
-  text-align: left;
+.content li a {
+  font-size: 2.2rem;
+  color: #f4f3ee;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
 }
-.about-us-body h2 {
-  margin-top: 1em;
+.content li a:hover {
+  color: #b1bdb2;
+}
+
+.movie a {
+  font-size: 1.6rem;
+  color: #f4f3ee;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.7);
+  padding-bottom: 30px;
+}
+.movie h1 {
+  margin: 30px 10px;
+  font-size: 4rem;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+.movie img {
+  width: 50vw;
+}
+.movie .intro {
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin: 0 auto 10px;
+  max-width: 40vw;
+  text-align: center;
 }
