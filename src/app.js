@@ -21,17 +21,13 @@ app.get("/filmer", async (req, res) => {
   res.render("filmer", { movies });
 });
 
-app.get("/movies/:movieId", async (req, res) => {
+app.get("/movie/:movieId", async (req, res) => {
   const movie = await loadMovie(req.params.movieId);
   res.render("movie", { movie });
 });
 
 app.get("/", async (req, res) => {
   res.render("home");
-});
-
-app.get("/filmer", async (req, res) => {
-  res.render("filmer");
 });
 
 app.get("/about", async (req, res) => {
