@@ -15,9 +15,8 @@ $black: #000000;
 
 main {
   position: relative;
-  top: 250px;
+  top: 200px;
   text-align: center;
-  min-height: 45%; // This is a temporary fix for height and footer issues!
 }
 
 * {
@@ -25,26 +24,26 @@ main {
   font-size: 10px;
   list-style-type: none;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
 
-  h1 {
-    font-size: 3.2rem;
-    color: $lightgreen;
-    margin: 10px;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
-  }
+h1 {
+  font-size: 3.4rem;
+  color: $lightgrey;
+  margin: 10px;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
 
-  h2 {
-    font-size: 2.2rem;
-    color: $lightgreen;
-    margin: 5px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  }
-  p {
-    font-size: 1.4rem;
-    color: $lightgrey;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
-  }
+h2 {
+  font-size: 2.2rem;
+  color: $lightgreen;
+  margin: 5px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+p {
+  font-size: 1.4rem;
+  color: $lightgrey;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
 body {
@@ -55,7 +54,11 @@ body {
     rgba(108, 121, 126, 1) 100%
   );
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   .background__raining {
     position: fixed;
@@ -66,11 +69,19 @@ body {
     object-position: center;
   }
 }
+.content {
+  flex: 1;
+  p {
+    max-width: 70vw;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
 
-@import 'sections/footer';
-@import 'sections/header';
-@import 'sections/start-page';
-@import 'sections/herobanner';
-@import 'sections/movies';
-@import 'sections/about-us';
-@import 'sections/tickets';
+@import "sections/footer";
+@import "sections/header";
+@import "sections/start-page";
+@import "sections/herobanner";
+@import "sections/movies";
+@import "sections/about-us";
+@import "sections/tickets";
