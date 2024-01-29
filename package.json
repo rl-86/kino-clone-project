@@ -5,11 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon",
-    "start": "node",
+    "start": "node .",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "dev:sass:watch": "sass --no-source-map --watch src/main.scss static/main.css"
+    "sass:watch": "sass --no-source-map --watch src/main.scss static/main.css"
   },
-  "start": "node .",
   "author": "rl-86",
   "license": "ISC",
   "devDependencies": {
