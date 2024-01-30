@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "start": "node .",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "sass:watch": "sass --no-source-map --watch src/main.scss static/main.css"
+    "sass:watch": "sass --no-source-map --watch static/sections/main.scss static/main.css"
   },
   "author": "rl-86",
   "license": "ISC",

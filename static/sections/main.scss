@@ -24,7 +24,7 @@ main {
   font-size: 10px;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -79,10 +79,9 @@ body {
   }
 }
 
-@import "sections/footer";
-@import "sections/header";
-@import "sections/start-page";
-@import "sections/herobanner";
-@import "sections/movies";
-@import "sections/about-us";
-@import "sections/tickets";
+@import 'footer';
+@import 'header';
+@import 'herobanner';
+@import 'movies';
+@import 'start-page';
+@import 'tickets';
